@@ -1,0 +1,27 @@
+<profile_name>0.0.0.0_ftp_tcp21</profile_name>
+<honeypot_ip>0.0.0.0</honeypot_ip>
+<protocol>tcp</protocol>
+<port>21</port>
+<session>
+	<0>
+		<active>1</active>
+		<content>220 Serv-U FTP Server v6.4 ready...\r\n</content>
+	</0>
+	<1>
+		<active>0</active>
+	</1>
+	<2>
+		<active>1</active>
+		<content>331 Password required!\r\n</content>
+	</2>
+	<3>
+		<active>0</active>
+	</3>
+	<4>
+		<active>1</active>
+		<content>530 Login or password incorrect!\r\n</content>
+	</4>
+	<99>
+		<close>1</close>
+	</99>
+</session>

@@ -1,0 +1,27 @@
+<profile_name>0.0.0.0_smtp_tcp25</profile_name>
+<honeypot_ip>0.0.0.0</honeypot_ip>
+<protocol>tcp</protocol>
+<port>25</port>
+<session>
+	<0>
+		<active>1</active>
+		<content>220 SMTP Mail Server Ready\r\n</content>
+	</0>
+	<1>
+		<active>0</active>
+	</1>
+	<2>
+		<active>1</active>
+		<content>250-TABS Mail Server. Hello, pleased to meet you.\r\n250-AUTH LOGIN CRAM-MD5\r\n250 HELP\r\n</content>
+	</2>
+	<3>
+		<active>0</active>
+	</3>
+	<4>
+		<active>1</active>
+		<content>504 Command parameter not implemented\r\n</content>
+	</4>
+	<99>
+		<close>1</close>
+	</99>
+</session>
