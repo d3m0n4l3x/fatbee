@@ -19,8 +19,12 @@ fi
 
 
 #/usr/local/sbin/fatbee/honeypot_v1.pl /usr/local/sbin/fatbee/0.0.0.0_ftp_tcp21.xml&
-/usr/local/sbin/fatbee/honeypot_v4_beta.pl /usr/local/sbin/fatbee/0.0.0.0_ftp_tcp21.xml&
-/usr/local/sbin/fatbee/honeypot_v4_beta.pl /usr/local/sbin/fatbee/0.0.0.0_http_tcp80.xml&
+#/usr/local/sbin/fatbee/honeypot_v4_beta.pl /usr/local/sbin/fatbee/0.0.0.0_ftp_tcp21.xml&
+#/usr/local/sbin/fatbee/honeypot_v4_beta.pl /usr/local/sbin/fatbee/0.0.0.0_http_tcp80.xml&
+#/usr/local/sbin/fatbee/honeypot_v4_beta.pl /usr/local/sbin/fatbee/0.0.0.0_smtp_tcp25.xml&
+/usr/local/sbin/fatbee/honeypot_v5_alpha.pl /usr/local/sbin/fatbee/0.0.0.0_ftp_tcp21.xml /usr/local/sbin/fatbee/ftp.log&
+/usr/local/sbin/fatbee/honeypot_v5_alpha.pl /usr/local/sbin/fatbee/0.0.0.0_http_tcp80.xml /usr/local/sbin/fatbee/http.log&
+/usr/local/sbin/fatbee/honeypot_v5_alpha.pl /usr/local/sbin/fatbee/0.0.0.0_smtp_tcp25.xml /usr/local/sbin/fatbee/smtp.log&
 
 
 exit 0
