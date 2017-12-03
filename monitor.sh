@@ -1,0 +1,2 @@
+#!/bin/sh
+watch -n 1 "echo 'Command: netstat -anteup|grep perl'; netstat -anteup|grep perl; echo ----; echo 'Command: ps -aef|grep perl|grep honeypot|grep -v watch|grep -v grep'; ps -aef|grep perl|grep honeypot|grep -v watch|grep -v grep; echo ----; echo 'Command: ps -aef|grep perl|grep correlation|grep -v watch|grep -v grep'; ps -aef|grep perl|grep correlation|grep -v watch|grep -v grep; echo ----; echo 'Command: tail -n 10 /usr/local/sbin/fatbee/correlation/all.log'; tail -n 10 /usr/local/sbin/fatbee/correlation/all.log"
