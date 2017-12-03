@@ -12,13 +12,15 @@ A low-interaction honeypot written by demonalex, i.e. Alex Huang.
 * Installation
 1) Copy everything to /usr/local/sbin/fatbee.
 2) Change the value of $admin_mailbox at send_email_through_gmail_v3.pl to your email address.
-3) Execute the program by running the following commands:
+3) Run the command below in order to create a folder called "correlation":
+touch /usr/local/sbin/fatbee/correlation
+4) Execute the program by running the following commands:
 /usr/local/sbin/fatbee/honeypot_v8_beta.pl /usr/local/sbin/fatbee/0.0.0.0_ftp_tcp21.xml /usr/local/sbin/fatbee/ftp.log&
 /usr/local/sbin/fatbee/correlation_analysis_v1.pl&
-4) If you would like to run the aforementioned commands right away after rebooting, just need to copy the rc.local to the /etc folder.
-5) Monitoring the status of the honeypot can be carried out by executing the command below.
+5) If you would like to run the aforementioned commands right away after rebooting, just need to copy the rc.local to the /etc folder.
+6) Monitoring the status of the honeypot can be carried out by executing the command below.
 /usr/local/sbin/fatbee/monitor.sh
-6) Furthermore, if you would like to observe the status of Correlation Analysis, you can execute the following command:
+7) Furthermore, if you would like to observe the status of Correlation Analysis, you can execute the following command:
 /usr/local/sbin/fatbee/monitor_correlation_analysis.sh
 
 * Enjoy my FatBee! ~ demonalex
