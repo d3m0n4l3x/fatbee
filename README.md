@@ -1,7 +1,7 @@
 # FatBee
 A low-interaction honeypot written by demonalex, i.e. Alex Huang.
 
-* Introduction - There are multiple functions shown below with FatBee v7.
+* Introduction - There are multiple functions shown below with FatBee v8.
 1) A low-interaction honeypot without any vulnerability for sure, since it is made in Perl.
 2) Using XML files as vehicles to configure honeypots, and the vehicle file would be defined as the first parameter for running the primary application, i.e. honeypot_v8_beta.pl.
 3) By default, there are three XML samples (i.e. FTP, HTTP, and SMTP) of honeypot configurations.
