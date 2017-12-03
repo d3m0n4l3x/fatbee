@@ -4,8 +4,8 @@
 #Updated on 20171202
 require "/usr/local/sbin/fatbee/send_email_through_gmail_v3.pl";
 $|=1;
-$time_slot=3*60;								#Time Slot is 5 minutes.
-$repeat_limits=10;
+$time_slot=2*60;								#Time Slot is 2 minutes.
+$repeat_limits=5;
 $correlation_analysis_log_file="/usr/local/sbin/fatbee/correlation/correlation_analysis_log.log";
 $dangerous_ip_log_file="/usr/local/sbin/fatbee/correlation/dangerous_ip_log_after_analyzing.log";
 
