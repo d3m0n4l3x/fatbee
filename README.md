@@ -9,6 +9,7 @@ A low-interaction honeypot written by demonalex, i.e. Alex Huang.
 5) Allowing the honeypot processes to send out logs through Syslog protocol, and everything can be defined in the send_syslog_v1.pl.
 6) The honeypot will send an email to a specific email address through Gmail, and the email address is defined in the send_email_through_gmail_v3.pl.
 7) There is a built-in Correlation Analysis engine with FatBee, and the engine is configured by modifying the file, /usr/local/sbin/fatbee/correlation_analysis_v1.pl.
+8) Furthermore, in order to reduce the uncertainty, there is a Watchdog application running with FatBee and ensuring that all processes are running properly. 
 
 * Installation
 1) Copy everything to /usr/local/sbin/fatbee.
@@ -23,5 +24,6 @@ touch /usr/local/sbin/fatbee/correlation
 /usr/local/sbin/fatbee/monitor.sh
 7) Furthermore, if you would like to observe the status of Correlation Analysis, you can execute the following command:
 /usr/local/sbin/fatbee/monitor_correlation_analysis.sh
+8) Confirming the value of $amount_of_honeypot_processes in the /usr/local/sbin/fatbee/watchdog_v1.pl, and adding the watchdog_v1.pl file into the /etc/crontab before letting the cron daemon restart.
 
 * Enjoy my FatBee! ~ demonalex
