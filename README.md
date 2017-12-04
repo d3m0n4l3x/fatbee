@@ -8,6 +8,7 @@ A low-interaction honeypot written by demonalex, i.e. Alex Huang.
 4) Each honeypot process can own a dedicated log file, which would be specified as the second parameter for running the primary application, i.e. honeypot_v8_beta.pl.
 5) Allowing the honeypot processes to send out logs through Syslog protocol, and everything can be defined in the send_syslog_v1.pl.
 6) The honeypot will send an email to a specific email address through Gmail, and the email address is defined in the send_email_through_gmail_v3.pl.
+7) There is a built-in Correlation Analysis engine with FatBee, and the engine is configured by modifying the file, /usr/local/sbin/fatbee/correlation_analysis_v1.pl.
 
 * Installation
 1) Copy everything to /usr/local/sbin/fatbee.
