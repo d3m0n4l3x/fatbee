@@ -15,7 +15,7 @@ A low-interaction honeypot written by demonalex, i.e. Alex Huang.
 1) Copy everything to /usr/local/sbin/fatbee.
 2) Change the value of $admin_mailbox at send_email_through_gmail_v3.pl to your email address.
 3) Run the command below in order to create a folder called "correlation":
-touch /usr/local/sbin/fatbee/correlation
+mkdir -p /usr/local/sbin/fatbee/correlation
 4) Execute the program by running the following commands:
 /usr/local/sbin/fatbee/honeypot_v8_beta.pl /usr/local/sbin/fatbee/0.0.0.0_ftp_tcp21.xml /usr/local/sbin/fatbee/ftp.log&
 /usr/local/sbin/fatbee/correlation_analysis_v2.pl&
